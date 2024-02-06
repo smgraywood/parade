@@ -1,0 +1,3 @@
+- step needs either parents or children or both
+- how to represent these on struct
+- either have multiple or single or no parents or children
