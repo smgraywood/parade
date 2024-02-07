@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import Optional
 
 @dataclass
 class Step: 
@@ -10,3 +11,14 @@ class Step:
     ls: int
     ef: int
     lf: int
+    children: list["Step"]
+    parents: list["Step"]
+    
+
+def total_float_calc(step:Step)->int:
+    return step.ls - step.es 
+#sometimes calc by lf-ef instead
+
+def free_float_calc(step:Step)->int:
+    return min([child.es for child in step.children])
+

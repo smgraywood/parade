@@ -1,3 +1,8 @@
+02/6
 - step needs either parents or children or both
 - how to represent these on struct
 - either have multiple or single or no parents or children
+
+02/7
+- look at creating custom type def for pos int only or data class validation
+- try to write test for free float to guarentee pos integers
