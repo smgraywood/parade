@@ -12,7 +12,13 @@ python = "^3.12"
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.0"
 hypothesis = "^6.98.2"
+annotated-types = "^0.6.0"
+pylint = "^3.0.3"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pylint]
+max-line-length = 120
+disable = ["R0902"]
